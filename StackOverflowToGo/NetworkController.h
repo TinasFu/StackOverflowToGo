@@ -11,8 +11,7 @@
 
 @interface NetworkController : NSObject
 
-@property (nonatomic, strong) NSURLSession *mySession;
-@property (strong, nonatomic) NSURLSessionConfiguration *configuration;
+
 
 - (void) searchQuestionsWithTag: (NSString *)tagString completionHandler: (void (^)(NSError *error, NSMutableArray *questions))success;
 

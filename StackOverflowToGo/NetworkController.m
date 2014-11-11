@@ -8,6 +8,15 @@
 
 #import "NetworkController.h"
 
+// to make private properties for the class
+@interface NetworkController()
+
+@property (nonatomic, strong) NSURLSession *mySession;
+@property (strong, nonatomic) NSURLSessionConfiguration *configuration;
+
+@end
+
+
 @implementation NetworkController
 
 
@@ -20,9 +29,9 @@
     NSLog(@"%@", url);
     
     NSURLSessionDataTask *dataTask = [self.mySession dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-        if(error != 0) {
+        if (error) {
             NSLog(@"%@",error.localizedDescription);
-        }else {
+        } else {
             NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
             if (httpResponse.statusCode >= 200 && httpResponse.statusCode <= 204) {
                 NSLog(@"got response");
@@ -31,7 +40,7 @@
                     success(nil, questions);
                 }];
             } else {
-                NSLog(@"Bad Response with Status Code: %d", httpResponse.statusCode);
+                NSLog(@"Bad Response with Status Code: %ld", (long)httpResponse.statusCode);
             }
             
         }

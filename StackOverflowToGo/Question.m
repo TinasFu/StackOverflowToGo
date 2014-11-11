@@ -12,16 +12,8 @@
 
 @implementation Question
 
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        //
-//    }
-//    return self;
-//}
 
--(id)initWithDictionary:(NSDictionary *)questionInfo {
+-(instancetype)initWithDictionary:(NSDictionary *)questionInfo {
     
     self = [super init];
     if (self) {
@@ -35,9 +27,9 @@
     NSDictionary *JSONDictionary = [NSJSONSerialization JSONObjectWithData:rawJSONData options:0 error:&error];
     
     if (error) {
-        NSLog(@"%@", error.localizedDescription);
+        NSLog(@"%@", error.localizedDescription); // %@ is for printing a string
     } else {
-        NSArray *itemArray = JSONDictionary[@"items"];
+        NSArray *itemArray = (NSArray *)JSONDictionary[@"items"]; //casting to NSArray
         NSMutableArray *questions = [[NSMutableArray alloc] init];
         for (NSDictionary *dictionary in itemArray) {
             Question *newQuestion = [[Question alloc]initWithDictionary:dictionary];

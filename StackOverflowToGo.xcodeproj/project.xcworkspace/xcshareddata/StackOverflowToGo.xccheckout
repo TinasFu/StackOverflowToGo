@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>080399D3-8C40-4F53-81A0-BDC53445AE64</string>
+	<key>IDESourceControlProjectName</key>
+	<string>StackOverflowToGo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7569C09A9C6CAB34F82BA86D26695FA5065A225F</key>
+		<string>https://github.com/TinasFu/StackOverflowToGo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StackOverflowToGo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7569C09A9C6CAB34F82BA86D26695FA5065A225F</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/TinasFu/StackOverflowToGo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7569C09A9C6CAB34F82BA86D26695FA5065A225F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7569C09A9C6CAB34F82BA86D26695FA5065A225F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>StackOverflowToGo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

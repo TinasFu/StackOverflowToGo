@@ -19,6 +19,7 @@
 		92871DB21A117D5500751D76 /* QuestionSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB11A117D5500751D76 /* QuestionSearchViewController.m */; };
 		92871DB71A1188F100751D76 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB61A1188F100751D76 /* Question.m */; };
 		92871DBA1A11D25900751D76 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB91A11D25900751D76 /* NetworkController.m */; };
+		92871DBD1A12825600751D76 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DBC1A12825600751D76 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		92871DB61A1188F100751D76 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
 		92871DB81A11D25900751D76 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
 		92871DB91A11D25900751D76 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
+		92871DBB1A12825600751D76 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		92871DBC1A12825600751D76 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +142,8 @@
 			children = (
 				92871DB51A1188F100751D76 /* Question.h */,
 				92871DB61A1188F100751D76 /* Question.m */,
+				92871DBB1A12825600751D76 /* User.h */,
+				92871DBC1A12825600751D76 /* User.m */,
 			);
 			name = "Model Layer";
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			files = (
 				92871DB21A117D5500751D76 /* QuestionSearchViewController.m in Sources */,
 				92871DAF1A11727C00751D76 /* SplitContainerViewController.m in Sources */,
+				92871DBD1A12825600751D76 /* User.m in Sources */,
 				92871D8A1A116AB500751D76 /* AppDelegate.m in Sources */,
 				92871D871A116AB500751D76 /* main.m in Sources */,
 				92871DBA1A11D25900751D76 /* NetworkController.m in Sources */,

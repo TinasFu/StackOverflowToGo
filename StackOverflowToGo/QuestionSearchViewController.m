@@ -21,6 +21,9 @@
 }
 
 
+
+#pragma mark - UITableView
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.questions count];
 }
@@ -32,12 +35,12 @@
     return cell;
 }
 
-#pragma mark UISearchBar
+#pragma mark - UISearchBar
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSString *tagString = self.searchBar.text;
     [[_appDelegate networkController] searchQuestionsWithTag:tagString completionHandler:^(NSError *error, NSMutableArray *questions) {
-        if (error != 0) {
+        if (error) {
             NSLog(@"error message: %@",error.localizedDescription);
         } else {
             self.questions = questions;
