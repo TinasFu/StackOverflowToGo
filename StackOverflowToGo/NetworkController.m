@@ -19,7 +19,7 @@
 
 @implementation NetworkController
 
-
+// using blocks. type of success is the whole thing in front of it
 - (void) searchQuestionsWithTag: (NSString *)tagString completionHandler: (void (^)(NSError *error, NSMutableArray *questions))success {
     
     self.configuration = [NSURLSessionConfiguration defaultSessionConfiguration];

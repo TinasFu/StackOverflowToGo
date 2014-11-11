@@ -17,7 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    _appDelegate =  [[UIApplication sharedApplication] delegate];
+//    _appDelegate =  [[UIApplication sharedApplication] delegate];
+    
+    self.networkController = [(AppDelegate *)[[UIApplication sharedApplication] delegate] networkController];
 }
 
 
@@ -39,7 +41,7 @@
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
     NSString *tagString = self.searchBar.text;
-    [[_appDelegate networkController] searchQuestionsWithTag:tagString completionHandler:^(NSError *error, NSMutableArray *questions) {
+    [self.networkController searchQuestionsWithTag:tagString completionHandler:^(NSError *error, NSMutableArray *questions) {
         if (error) {
             NSLog(@"error message: %@",error.localizedDescription);
         } else {

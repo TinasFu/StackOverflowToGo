@@ -17,7 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    _networkController = [[NetworkController alloc] init];
+    // Use self.networkController instead of _networkController to init. When passing using both are fine
+    self.networkController = [[NetworkController alloc] init];
     return YES;
 }
 

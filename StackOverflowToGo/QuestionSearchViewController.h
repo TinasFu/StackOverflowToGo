@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
 @property (strong, nonatomic) NSMutableArray *questions;
-@property (strong, nonatomic) AppDelegate *appDelegate;
+//@property (strong, nonatomic) AppDelegate *appDelegate;
 @property (strong, nonatomic) NetworkController *networkController;
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+// Conforming to protocol UISplitViewControllerDelegate
 @interface SplitContainerViewController : UIViewController <UISplitViewControllerDelegate>
 
 @end
