@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SplitContainerViewController.h
 //  StackOverflowToGo
 //
 //  Created by Shiquan Fu on 11/10/14.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface SplitContainerViewController : UIViewController <UISplitViewControllerDelegate>
 
 @end
-

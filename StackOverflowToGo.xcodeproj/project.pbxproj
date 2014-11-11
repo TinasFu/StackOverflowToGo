@@ -15,6 +15,10 @@
 		92871D951A116AB500751D76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92871D941A116AB500751D76 /* Images.xcassets */; };
 		92871D981A116AB500751D76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92871D961A116AB500751D76 /* LaunchScreen.xib */; };
 		92871DA41A116AB500751D76 /* StackOverflowToGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DA31A116AB500751D76 /* StackOverflowToGoTests.m */; };
+		92871DAF1A11727C00751D76 /* SplitContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DAE1A11727C00751D76 /* SplitContainerViewController.m */; };
+		92871DB21A117D5500751D76 /* QuestionSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB11A117D5500751D76 /* QuestionSearchViewController.m */; };
+		92871DB71A1188F100751D76 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB61A1188F100751D76 /* Question.m */; };
+		92871DBA1A11D25900751D76 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB91A11D25900751D76 /* NetworkController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,14 @@
 		92871D9D1A116AB500751D76 /* StackOverflowToGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowToGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92871DA21A116AB500751D76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92871DA31A116AB500751D76 /* StackOverflowToGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowToGoTests.m; sourceTree = "<group>"; };
+		92871DAD1A11727C00751D76 /* SplitContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplitContainerViewController.h; sourceTree = "<group>"; };
+		92871DAE1A11727C00751D76 /* SplitContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplitContainerViewController.m; sourceTree = "<group>"; };
+		92871DB01A117D5500751D76 /* QuestionSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionSearchViewController.h; sourceTree = "<group>"; };
+		92871DB11A117D5500751D76 /* QuestionSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionSearchViewController.m; sourceTree = "<group>"; };
+		92871DB51A1188F100751D76 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		92871DB61A1188F100751D76 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		92871DB81A11D25900751D76 /* NetworkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkController.h; sourceTree = "<group>"; };
+		92871DB91A11D25900751D76 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,10 +97,10 @@
 			children = (
 				92871D881A116AB500751D76 /* AppDelegate.h */,
 				92871D891A116AB500751D76 /* AppDelegate.m */,
-				92871D8E1A116AB500751D76 /* ViewController.h */,
-				92871D8F1A116AB500751D76 /* ViewController.m */,
-				92871D911A116AB500751D76 /* Main.storyboard */,
+				92871DB41A11882400751D76 /* Controller Layer */,
+				92871DB31A1187D100751D76 /* Model Layer */,
 				92871D941A116AB500751D76 /* Images.xcassets */,
+				92871D911A116AB500751D76 /* Main.storyboard */,
 				92871D961A116AB500751D76 /* LaunchScreen.xib */,
 				92871D8B1A116AB500751D76 /* StackOverflowToGo.xcdatamodeld */,
 				92871D841A116AB500751D76 /* Supporting Files */,
@@ -120,6 +132,30 @@
 				92871DA21A116AB500751D76 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92871DB31A1187D100751D76 /* Model Layer */ = {
+			isa = PBXGroup;
+			children = (
+				92871DB51A1188F100751D76 /* Question.h */,
+				92871DB61A1188F100751D76 /* Question.m */,
+			);
+			name = "Model Layer";
+			sourceTree = "<group>";
+		};
+		92871DB41A11882400751D76 /* Controller Layer */ = {
+			isa = PBXGroup;
+			children = (
+				92871D8E1A116AB500751D76 /* ViewController.h */,
+				92871D8F1A116AB500751D76 /* ViewController.m */,
+				92871DAD1A11727C00751D76 /* SplitContainerViewController.h */,
+				92871DAE1A11727C00751D76 /* SplitContainerViewController.m */,
+				92871DB01A117D5500751D76 /* QuestionSearchViewController.h */,
+				92871DB11A117D5500751D76 /* QuestionSearchViewController.m */,
+				92871DB81A11D25900751D76 /* NetworkController.h */,
+				92871DB91A11D25900751D76 /* NetworkController.m */,
+			);
+			name = "Controller Layer";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,8 +258,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92871DB21A117D5500751D76 /* QuestionSearchViewController.m in Sources */,
+				92871DAF1A11727C00751D76 /* SplitContainerViewController.m in Sources */,
 				92871D8A1A116AB500751D76 /* AppDelegate.m in Sources */,
 				92871D871A116AB500751D76 /* main.m in Sources */,
+				92871DBA1A11D25900751D76 /* NetworkController.m in Sources */,
+				92871DB71A1188F100751D76 /* Question.m in Sources */,
 				92871D901A116AB500751D76 /* ViewController.m in Sources */,
 				92871D8D1A116AB500751D76 /* StackOverflowToGo.xcdatamodeld in Sources */,
 			);
