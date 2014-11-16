@@ -10,6 +10,8 @@
 
 @interface QuestionSearchViewController ()
 
+@property UIViewController *webVC;
+
 @end
 
 @implementation QuestionSearchViewController
@@ -20,6 +22,7 @@
 //    _appDelegate =  [[UIApplication sharedApplication] delegate];
     
     self.networkController = [(AppDelegate *)[[UIApplication sharedApplication] delegate] networkController];
+
 }
 
 
@@ -36,6 +39,8 @@
     cell.textLabel.text = [newQuestion questionTitle];
     return cell;
 }
+
+
 
 #pragma mark - UISearchBar
 

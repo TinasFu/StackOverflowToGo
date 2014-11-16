@@ -40,7 +40,10 @@
                     success(nil, questions);
                 }];
             } else {
-                NSLog(@"Bad Response with Status Code: %ld", (long)httpResponse.statusCode);
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    success(error, nil);
+                }];
+                //NSLog(@"Bad Response with Status Code: %ld", (long)httpResponse.statusCode);
             }
             
         }

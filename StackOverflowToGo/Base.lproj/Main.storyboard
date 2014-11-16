@@ -15,7 +15,19 @@
                     <view key="view" contentMode="scaleToFill" id="SoP-C3-taD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHk-Kb-vCw">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uHk-Kb-vCw" firstAttribute="leading" secondItem="SoP-C3-taD" secondAttribute="leading" id="8AW-yS-eXf"/>
+                            <constraint firstAttribute="trailing" secondItem="uHk-Kb-vCw" secondAttribute="trailing" id="UFe-3F-8cn"/>
+                            <constraint firstItem="uHk-Kb-vCw" firstAttribute="top" secondItem="SoP-C3-taD" secondAttribute="top" id="pBQ-gX-E72"/>
+                            <constraint firstItem="3sD-UJ-usi" firstAttribute="top" secondItem="uHk-Kb-vCw" secondAttribute="bottom" id="wQd-FS-bG4"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhQ-Xu-oBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -50,11 +62,22 @@
                                             <segue destination="pgm-lk-4vP" kind="showDetail" id="n0o-2W-lO1"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fxb-ro-4sG">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="4DU-HO-mAX" style="IBUITableViewCellStyleDefault" id="fxb-ro-4sG">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fxb-ro-4sG" id="9Fm-Dw-kOu">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Profile" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4DU-HO-mAX">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Bvx-cv-XrD" kind="showDetail" id="pUP-75-yKt"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="utW-9V-yzk">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -75,6 +98,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtH-GJ-TId" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1110" y="-73"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="otv-iu-tY2">
+            <objects>
+                <viewController storyboardIdentifier="WEBVIEW" id="Bvx-cv-XrD" customClass="WebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nz6-rk-evt"/>
+                        <viewControllerLayoutGuide type="bottom" id="cj1-uF-SSU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1x2-8c-EB7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jf7-lr-K2A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sDS-7Z-cYW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1110" y="622"/>
         </scene>
         <!--Question Search View Controller-->
         <scene sceneID="f24-gf-ms4">

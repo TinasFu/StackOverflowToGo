@@ -20,6 +20,11 @@
 		92871DB71A1188F100751D76 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB61A1188F100751D76 /* Question.m */; };
 		92871DBA1A11D25900751D76 /* NetworkController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DB91A11D25900751D76 /* NetworkController.m */; };
 		92871DBD1A12825600751D76 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DBC1A12825600751D76 /* User.m */; };
+		92871DC31A12D09E00751D76 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DC21A12D09E00751D76 /* WebViewController.m */; };
+		92871DC61A1334A600751D76 /* RootMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871DC51A1334A600751D76 /* RootMenuViewController.m */; };
+		92871E031A14162600751D76 /* Questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 92871E021A14162600751D76 /* Questions.json */; };
+		92871E051A141CE300751D76 /* QuestionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92871E041A141CE300751D76 /* QuestionTests.m */; };
+		92871E071A14473A00751D76 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 92871E061A14473A00751D76 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,14 @@
 		92871DB91A11D25900751D76 /* NetworkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkController.m; sourceTree = "<group>"; };
 		92871DBB1A12825600751D76 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		92871DBC1A12825600751D76 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		92871DC11A12D09E00751D76 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		92871DC21A12D09E00751D76 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		92871DC41A1334A600751D76 /* RootMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootMenuViewController.h; sourceTree = "<group>"; };
+		92871DC51A1334A600751D76 /* RootMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootMenuViewController.m; sourceTree = "<group>"; };
+		92871E021A14162600751D76 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
+		92871E041A141CE300751D76 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
+		92871E061A14473A00751D76 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		92871E0B1A147FD000751D76 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,7 @@
 				92871D961A116AB500751D76 /* LaunchScreen.xib */,
 				92871D8B1A116AB500751D76 /* StackOverflowToGo.xcdatamodeld */,
 				92871D841A116AB500751D76 /* Supporting Files */,
+				92871E061A14473A00751D76 /* Localizable.strings */,
 			);
 			path = StackOverflowToGo;
 			sourceTree = "<group>";
@@ -114,6 +128,7 @@
 		92871D841A116AB500751D76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				92871E021A14162600751D76 /* Questions.json */,
 				92871D851A116AB500751D76 /* Info.plist */,
 				92871D861A116AB500751D76 /* main.m */,
 			);
@@ -124,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				92871DA31A116AB500751D76 /* StackOverflowToGoTests.m */,
+				92871E041A141CE300751D76 /* QuestionTests.m */,
 				92871DA11A116AB500751D76 /* Supporting Files */,
 			);
 			path = StackOverflowToGoTests;
@@ -159,6 +175,10 @@
 				92871DB11A117D5500751D76 /* QuestionSearchViewController.m */,
 				92871DB81A11D25900751D76 /* NetworkController.h */,
 				92871DB91A11D25900751D76 /* NetworkController.m */,
+				92871DC11A12D09E00751D76 /* WebViewController.h */,
+				92871DC21A12D09E00751D76 /* WebViewController.m */,
+				92871DC41A1334A600751D76 /* RootMenuViewController.h */,
+				92871DC51A1334A600751D76 /* RootMenuViewController.m */,
 			);
 			name = "Controller Layer";
 			sourceTree = "<group>";
@@ -243,7 +263,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92871E071A14473A00751D76 /* Localizable.strings in Resources */,
 				92871D931A116AB500751D76 /* Main.storyboard in Resources */,
+				92871E031A14162600751D76 /* Questions.json in Resources */,
 				92871D981A116AB500751D76 /* LaunchScreen.xib in Resources */,
 				92871D951A116AB500751D76 /* Images.xcassets in Resources */,
 			);
@@ -264,12 +286,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				92871DB21A117D5500751D76 /* QuestionSearchViewController.m in Sources */,
+				92871DC31A12D09E00751D76 /* WebViewController.m in Sources */,
 				92871DAF1A11727C00751D76 /* SplitContainerViewController.m in Sources */,
 				92871DBD1A12825600751D76 /* User.m in Sources */,
 				92871D8A1A116AB500751D76 /* AppDelegate.m in Sources */,
 				92871D871A116AB500751D76 /* main.m in Sources */,
 				92871DBA1A11D25900751D76 /* NetworkController.m in Sources */,
 				92871DB71A1188F100751D76 /* Question.m in Sources */,
+				92871DC61A1334A600751D76 /* RootMenuViewController.m in Sources */,
 				92871D901A116AB500751D76 /* ViewController.m in Sources */,
 				92871D8D1A116AB500751D76 /* StackOverflowToGo.xcdatamodeld in Sources */,
 			);
@@ -280,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92871DA41A116AB500751D76 /* StackOverflowToGoTests.m in Sources */,
+				92871E051A141CE300751D76 /* QuestionTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +323,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				92871D921A116AB500751D76 /* Base */,
+				92871E0B1A147FD000751D76 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

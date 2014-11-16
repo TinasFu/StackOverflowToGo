@@ -1,0 +1,9 @@
+
+/* Class = "IBUILabel"; text = "Profile"; ObjectID = "4DU-HO-mAX"; */
+"4DU-HO-mAX.text" = "用户配置文件";
+
+/* Class = "IBUINavigationItem"; title = "Menu"; ObjectID = "K9t-XL-NfK"; */
+"K9t-XL-NfK.title" = "菜单";
+
+/* Class = "IBUILabel"; text = "Questions"; ObjectID = "RU9-Iu-RGc"; */
+"RU9-Iu-RGc.text" = "问题";
