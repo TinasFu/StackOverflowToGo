@@ -27,14 +27,14 @@
     self.mySession = [NSURLSession sessionWithConfiguration:self.configuration];
     self.publicKey = @"bpRaFcC5jRk)b7bw9F9k1g((";
     
-    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com//2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow", tagString]];
+    NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow", tagString]];
     //NSLog(@"%@", url);
     
     
     NSString *oAuthKey = [[NSUserDefaults standardUserDefaults] valueForKey:@"access_token"];
     NSLog(@"oAuthKey:%@", oAuthKey);
     if (oAuthKey) {
-        NSURL *urlWithOAuth = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com//2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow&access_token=%@&key=%@", tagString,oAuthKey,self.publicKey]];
+        NSURL *urlWithOAuth = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow&access_token=%@&key=%@", tagString,oAuthKey,self.publicKey]];
         url = urlWithOAuth;
     }
     NSLog(@"%@", url);
