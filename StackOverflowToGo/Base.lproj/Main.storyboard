@@ -110,7 +110,19 @@
                     <view key="view" contentMode="scaleToFill" id="1x2-8c-EB7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Authorized" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKj-xo-oAY">
+                                <rect key="frame" x="238.5" y="73" width="123.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UKj-xo-oAY" firstAttribute="top" secondItem="nz6-rk-evt" secondAttribute="bottom" constant="73" id="GfI-Xt-TW2"/>
+                            <constraint firstAttribute="centerX" secondItem="UKj-xo-oAY" secondAttribute="centerX" id="Qpa-th-xiK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="jf7-lr-K2A"/>
                 </viewController>

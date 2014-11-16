@@ -69,7 +69,8 @@
 		92871E021A14162600751D76 /* Questions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Questions.json; sourceTree = "<group>"; };
 		92871E041A141CE300751D76 /* QuestionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionTests.m; sourceTree = "<group>"; };
 		92871E061A14473A00751D76 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		92871E0B1A147FD000751D76 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		92873AA71A187CF500E6B809 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		92873AA81A187CF500E6B809 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +324,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				92871D921A116AB500751D76 /* Base */,
-				92871E0B1A147FD000751D76 /* zh-Hans */,
+				92873AA71A187CF500E6B809 /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -332,6 +333,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				92871D971A116AB500751D76 /* Base */,
+				92873AA81A187CF500E6B809 /* zh-Hans */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -490,6 +492,7 @@
 				92871DA91A116AB500751D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		92871DAA1A116AB500751D76 /* Build configuration list for PBXNativeTarget "StackOverflowToGoTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +501,7 @@
 				92871DAC1A116AB500751D76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

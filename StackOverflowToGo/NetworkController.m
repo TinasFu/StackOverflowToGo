@@ -13,6 +13,7 @@
 
 @property (nonatomic, strong) NSURLSession *mySession;
 @property (strong, nonatomic) NSURLSessionConfiguration *configuration;
+@property (strong, nonatomic) NSString *publicKey;
 
 @end
 
@@ -24,8 +25,18 @@
     
     self.configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     self.mySession = [NSURLSession sessionWithConfiguration:self.configuration];
+    self.publicKey = @"bpRaFcC5jRk)b7bw9F9k1g((";
     
     NSURL *url = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com//2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow", tagString]];
+    //NSLog(@"%@", url);
+    
+    
+    NSString *oAuthKey = [[NSUserDefaults standardUserDefaults] valueForKey:@"access_token"];
+    NSLog(@"oAuthKey:%@", oAuthKey);
+    if (oAuthKey) {
+        NSURL *urlWithOAuth = [[NSURL alloc] initWithString:[NSString stringWithFormat:@"https://api.stackexchange.com//2.2/search?order=desc&sort=activity&tagged=%@&site=stackoverflow&access_token=%@&key=%@", tagString,oAuthKey,self.publicKey]];
+        url = urlWithOAuth;
+    }
     NSLog(@"%@", url);
     
     NSURLSessionDataTask *dataTask = [self.mySession dataTaskWithURL:url completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {

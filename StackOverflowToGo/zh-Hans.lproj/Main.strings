@@ -7,3 +7,6 @@
 
 /* Class = "IBUILabel"; text = "Questions"; ObjectID = "RU9-Iu-RGc"; */
 "RU9-Iu-RGc.text" = "问题";
+
+/* Class = "IBUILabel"; text = "User Authorized"; ObjectID = "UKj-xo-oAY"; */
+"UKj-xo-oAY.text" = "用户已被授权";
